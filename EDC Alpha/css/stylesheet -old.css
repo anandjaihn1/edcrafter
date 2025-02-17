@@ -1,0 +1,123 @@
+ 
+   body{
+    font-family: 'Proxima Nova';
+    color: #022253;
+   }
+  html{
+      font-size: 16px;
+  } 
+  ul li{
+    z-index: 2;
+    position: relative;
+    margin-top: 30px;
+  }
+
+  #fixedbar {
+  display: none;
+  position: fixed;
+  right: 20px; 
+  bottom: 40%;
+  z-index: 99;
+}
+.active1 {
+    color: #d05131 !important;
+}
+.navigation li a:after{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 48px;
+    right: 0px;
+    top: 0px;
+    bottom: 0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+.navigation li a.active1:after{
+    background-color: #d05131;
+/*    border: 2px solid #ffffff;*/
+}
+body {
+  overflow-x: hidden;
+}
+.container-fluid1 {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 254, 234, 1) 0%,
+    rgba(255, 254, 234, 1) 35%,
+    #9ce0fa 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #32b1e1;
+}
+
+.wave {
+  background: url(../images/wave.svg)
+    repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 825px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+    swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
+.design:after{
+   content:url(../images/Rectangle.png);
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   transform:rotate(180deg);
+}
+.design:before{
+   content:url(../images/Rectangle.png);
+   position: absolute;
+   top: 0;
+   left: 0;
+   
+}
+.pink{
+   background: rgb(255,250,243);
+   background: linear-gradient(90deg, rgba(255,250,243,1) 0%, rgba(255,245,230,1) 35%);
+   z-index: 1;
+   position: relative;
+}
