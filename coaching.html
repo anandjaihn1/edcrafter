@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>EdCrafted | About</title>
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+      <!-- External Stylesheets -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Frank+Ruhl+Libre:wght@300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+         rel="stylesheet">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+      <link rel="stylesheet" href="css/stylesheet.css" />
+      <style>
+         .step-container {
+         display: flex;
+         align-items: flex-start;
+         position: relative;
+         margin-bottom: 20px; /* Adjust spacing between steps */
+         }
+         .step-number {
+         background-color: #D0A9F5;
+         color: #fff;
+         font-size: 1.2rem;
+         font-weight: bold;
+         width: 40px;
+         height: 40px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         border-radius: 5px;
+         position: relative;
+         }
+         /* Ensure line extends properly */
+         .step-container:not(:last-child) .step-number::after {
+         height: calc(100% + 30px); /* Adjust dynamically */
+         }
+         /* Remove line from the last step */
+         .step-container:last-child .step-number::after {
+         display: none;
+         }
+         .step-title {
+         font-weight: bold;
+         color: #1a1a2e;
+         }
+         .step-content {
+         color: #333;
+         }
+         .highlight {
+         font-weight: bold;
+         color: #007bff;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Header & Navigation -->
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-dark px-4">
+            <div class="container-fluid">
+               <div class="collapse navbar-collapse" id="mynavbar">
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link active" href="our-services.html">OUR SERVICES</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="about.html">ABOUT US</a>
+                     </li>
+                  </ul>
+               </div>
+               <a class="navbar-brand" href="javascript:void(0)">
+               <img src="images/edcrafter_logo.png" class="img-fluid" alt="edcrafter" />
+               </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="header-btn">
+                  <button class="btn btn-nav-primary">LET'S TALK</button>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <section class="sec-service-nav">
+        <div class="row m-0">
+          <div class="col-lg-3 px-0">
+            <div class="serviec-n-item">
+              <img src="images/services/right-arrow.svg" class="">
+              <p>TRAINING DESIGN AND DELIVERY</p>
+            </div>
+          </div>
+          <div class="col-lg-3 px-0">
+            <div class="serviec-n-item">
+              <img src="images/services/right-arrow.svg" class="">
+              <p>CURRICULUM DESIGN AND FACULTY TRAINING</p>
+            </div>
+          </div>
+          <div class="col-lg-3 px-0">
+            <div class="serviec-n-item active">
+              <img src="images/services/down-arrow.svg" class="">
+              <p>PERSONAL LEARNING PLANS AND COACHING</p>
+            </div>
+          </div>
+          <div class="col-lg-3 px-0">
+            <div class="serviec-n-item">
+              <img src="images/services/right-arrow.svg" class="">
+              <p>AWESOME COURSES, CREATED EXCLUSIVELY FOR YOU</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sec -->
+      <section class="sec-training text-white">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-7">
+                  <h2 class="">CUSTOM TRAINING DESIGN AND FACILITATION</h2>
+                  <p>We help organizations plan, design and implement high-impact trainings that are driven by creativity and
+                     backed by research.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="sec-learning">
+         <div class="container">
+            <!-- Step 1 -->
+            <div class="step-container">
+               <div class="row align-items-center mb-5">
+                  <div class="col-md-1 d-flex flex-column align-items-center">
+                     <div class="step-number">1</div>
+                  </div>
+                  <div class="col-md-7">
+                     <h4 class="step-title">Discovering and defining your learning needs/goals</h4>
+                     <p class="step-content">
+                        We begin by having in-depth conversations with you to help us understand your 
+                        <i>learning goals/needs</i> at this point in your life. It can be around any area of your life: 
+                        work, love, body, mind, money, or play. Based on a thorough understanding, we define specific 
+                        learning objectives for you.
+                     </p>
+                  </div>
+                  <div class="col-md-4">
+                     <img src="images/services/s1.jpg" class="img-fluid" alt="Goal Setting">
+                  </div>
+               </div>
+            </div>
+            <!-- Step 2 -->
+            <div class="step-container">
+               <div class="row align-items-center">
+                  <div class="col-md-1 d-flex flex-column align-items-center">
+                     <div class="step-number last-step">2</div>
+                  </div>
+                  <div class="col-md-7">
+                     <h4 class="step-title">Crafting a personal growth journey</h4>
+                     <p class="step-content">
+                        Based on a deep understanding of your goals and our jointly defined objectives, we build a 
+                        personal learning journey for you. This would include:
+                     </p>
+                     <ul>
+                        <li><span class="highlight">Finding and connecting you with the right mentors</span>, teachers and coaches for your goals</li>
+                        <li><span class="highlight">Researching the best courses, books, and other resources</span> to support your journey</li>
+                        <li>Creating an <span class="highlight">actionable learning plan</span></li>
+                        <li><span class="highlight">Ensuring optimal learning</span> based on principles of learning science and adult development</li>
+                     </ul>
+                  </div>
+                  <div class="col-md-4">
+                     <img src="images/services/s2.jpg" class="img-fluid" alt="Growth Planning">
+                  </div>
+               </div>
+            </div>
+            <!-- Step 3 -->
+            <div class="step-container">
+              <div class="row align-items-center">
+                 <div class="col-md-1 d-flex flex-column align-items-center">
+                    <div class="step-number last-step">3</div>
+                 </div>
+                 <div class="col-md-7">
+                    <h4 class="step-title">1:1 Coaching to help you get there</h4>
+                    <p class="step-content">
+                      We don’t stop with just helping you create a plan - even AI is getting better at it! - our <b>Learning Coaches</b> offer 1:1 support throughout your journey by encouraging you and tracking progress. They become the friend who thoughtfully leads you, pushes you, and nudges you to keep making progress towards your learning goals.
+                    </p>
+                 </div>
+                 <div class="col-md-4">
+                    <img src="images/services/s3.jpg" class="img-fluid" alt="Growth Planning">
+                 </div>
+              </div>
+           </div>
+         </div>
+      </section>
+      <!-- Footer -->
+      <footer class="footer-main text-white">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4">
+                  <div class="footer-about">
+                     <h5>About</h5>
+                     <p>EdCrafter brings creativity, research, and efficiency to the design of education. We specialize in
+                        building curriculum and learning journeys for companies, educational institutions, and individuals.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-lg-4 text-center">
+                  <a href="index.html" class="footer-logo">
+                  <img src="images/edcrafter_logo.svg" alt="logo">
+                  </a>
+                  <div class="footer-service-list">
+                     <h5>Service</h5>
+                     <ul class="footer-list">
+                        <li class="">
+                           <a class="" href="index.html">Home</a>
+                        </li>
+                        <li class="">
+                           <a class="" href="about.html">About Us</a>
+                        </li>
+                        <li class="">
+                           <a class="" href="our-services.html">Our Services</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="footer-get-in-touch">
+                     <h5 class="mb-3">Get In Touch</h5>
+                     <p class="f-phone-email"><i class="fa-solid fa-phone me-2"></i> <a href="tel:516-469-2921">516-469-2921</a>
+                     </p>
+                     <p class="f-phone-email"><i class="fa-solid fa-envelope me-2"></i> <a
+                        href="mailto:anand@edcrafter.com">anand@edcrafter.com</a></p>
+                     <hr>
+                     <h5>Explore our Ideas</h5>
+                     <div class="f-explore">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- jQuery, Custom JS and Bootstrap Bundle -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+         AOS.init();
+      </script>
+   </body>
+</html>
